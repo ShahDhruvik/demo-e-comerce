@@ -1,11 +1,11 @@
-import axios from "axios";
-import { createContext, useCallback, useContext, useMemo } from "react";
+import { createContext, useCallback, useMemo } from "react";
 import axiosInstance from "../utils/AxiosInstance";
 import { useReducer } from "react";
 import productReducer, { productInitialState } from "../reducer/productReducer";
 
 export const ProductContext = createContext();
 
+// eslint-disable-next-line react/prop-types
 export const ProductProvider = ({ children }) => {
   const [ProductState, dispatch] = useReducer(
     productReducer,

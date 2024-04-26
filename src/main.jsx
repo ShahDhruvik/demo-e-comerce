@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import {
   Route,
@@ -36,12 +35,10 @@ const router = createBrowserRouter(
         <Route path="/productPage" element={<ProductPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/shippingForm" element={<ShippingForm />} />
-  
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/myorder" element={<Myorder />} />
         <Route path="/orderSummery/:id" ex element={<OrderSummery />} />
       </Route>
-
       <Route
         path="/auth"
         element={
@@ -56,18 +53,16 @@ const router = createBrowserRouter(
     </>
   )
 );
-
 const store = createStore(
   rootReducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
-  <GoogleOAuthProvider clientId="817949669616-6qt97mo3a3bgesclj6v981lnarauf3n6.apps.googleusercontent.com">
-    <Provider store={store}>
-      <RouterProvider router={router} />
-    </Provider>
+    <GoogleOAuthProvider clientId="817949669616-6qt97mo3a3bgesclj6v981lnarauf3n6.apps.googleusercontent.com">
+      <Provider store={store}>
+        <RouterProvider router={router} />
+      </Provider>
     </GoogleOAuthProvider>
   </>
 );

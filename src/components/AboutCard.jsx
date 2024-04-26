@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import AboutCard1 from '../assets/images/AboutCard1.jpg'
 import Flag from '../assets/images/Falg.jpg'
 

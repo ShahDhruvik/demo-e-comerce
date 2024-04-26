@@ -1,4 +1,4 @@
-import React,{ Fragment,Component } from 'react'
+import { Fragment } from 'react'
 import './App.css'
 import { PDFViewer } from '@react-pdf/renderer'
 import Invoice from './components/reports/Invoice'

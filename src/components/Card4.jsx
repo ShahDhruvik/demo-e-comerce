@@ -1,7 +1,7 @@
-import React from 'react'
 
 
-const Card4 = ({image,title, desc}) => {
+// eslint-disable-next-line react/prop-types
+const Card4 = ({image,title,desc}) => {
   return (
     <div className='flex  gap-6 mx-auto flex-col   py-5'>
         <h1 className='font-bold text-xl'>Stay Updated</h1>

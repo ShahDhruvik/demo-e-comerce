@@ -1,4 +1,3 @@
-import React from 'react';
 import SideDesign from "../assets/images/SideDesign.png";
 
 const Card2 = () => {

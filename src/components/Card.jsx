@@ -1,17 +1,14 @@
-import axios from "axios";
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import  { useState } from "react";
 import { ReactComponent as Close } from "../assets/svg/Close.svg";
 import axiosInstance from "../utils/AxiosInstance";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { loadCart } from "../actions/cartAction";
 
+// eslint-disable-next-line react/prop-types
 const Card = ({ image, categoryName, caption, price, btn }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  const navigate = useNavigate();
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -32,7 +29,7 @@ const Card = ({ image, categoryName, caption, price, btn }) => {
   const addToCart = async () => {
     try {
       const localStorageData = JSON.parse(localStorage.getItem("token"));
-      const { email, username } = localStorageData.user;
+      const { email } = localStorageData.user;
       const data = {
         image,
         categoryName,

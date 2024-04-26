@@ -1,9 +1,11 @@
+/* eslint-disable no-unused-vars */
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { createContext } from "react";
 import axiosInstance from "../utils/AxiosInstance";
 import { toast } from "react-toastify";
 
 export const AuthContext = createContext();
+// eslint-disable-next-line react/prop-types
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 

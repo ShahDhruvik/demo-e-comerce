@@ -1,20 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import React, { useContext, useEffect } from "react";
+import  { useContext } from "react";
 import { AuthContext } from "../context/authContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { GoogleLogin } from '@react-oauth/google';
 
 const Login = () => {
   const { login } = useContext(AuthContext);
 
-  const responseMessage = (response) => {
-    console.log(response);
-};
-const errorMessage = (error) => {
-    console.log(error);
-};
 
    return (
     <>

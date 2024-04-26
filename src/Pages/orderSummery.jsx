@@ -1,7 +1,5 @@
-import React, { useEffect } from "react";
-import { connect } from "react-redux";
-import { loadOrders } from "../actions/orderAction";
-import { useNavigate, useParams } from "react-router-dom";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { useState } from "react";
 import axiosInstance from "../utils/AxiosInstance";
 import axios from "axios";
@@ -75,7 +73,6 @@ const OrderSummery = () => {
              <h2 className="text-xl font-bold mb-2">
                {x.categoryName}
              </h2>
-          
              <p className="text-gray-700">
                
                <span className="font-bold">

@@ -1,4 +1,3 @@
-import React from 'react'
 import Card4 from './Card4'
 import Shoes from "../assets/images/Shoes2.jpg";
 import Image5 from "../assets/images/Image5.jpg";

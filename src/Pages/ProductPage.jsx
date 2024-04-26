@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+/* eslint-disable react/prop-types */
+import  { useEffect, useState } from "react";
 import Card from "../components/Card";
 
 import Slider from "@mui/material/Slider";
@@ -9,12 +10,11 @@ import { categoryProducts, loadProducts } from "../actions/ProductAction";
 import { addCart, loadCart } from "../actions/cartAction";
 import axiosInstance from "../utils/AxiosInstance";
 import  { ReactComponent as Loader } from '../assets/svg/Loader (2).svg'
-import ProductNotFound from '../assets/images/Searching.gif'
 
 
 const ProductPage = ({
-  products: { products, loading: productsLoading, error: productsError },
-  cart: { cart, loading: cartLoading, error: cartError },
+  products: { products, loading: productsLoading },
+  cart: { loading: cartLoading },
   loadProducts,
 }) => {
   const [sortOption, setSortOption] = useState("");
@@ -22,7 +22,7 @@ const ProductPage = ({
   const [selectedCategory, setSelectedCategory] = useState("");
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(100);
-  const [gettingData, setGettingData] = useState([]);
+  const [, setGettingData] = useState([]);
 
   const onCategoryChange = async (e) => {
     const selectedCategory = e.target.value;

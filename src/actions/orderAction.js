@@ -24,7 +24,7 @@ export  const generateOrderId = () => {
       const localStorageData = JSON.parse(localStorage.getItem("token"));
       const { email } = localStorageData.user;
      
-      const {id,...CartDataWithoutID}=orderDetails
+      const {...CartDataWithoutID}=orderDetails
       console.log(CartDataWithoutID,"sdfpodjfpodgpodgdpf");
       const orderID = generateOrderId(); // Function to generate an order ID
       const orderData = {

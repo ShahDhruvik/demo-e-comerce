@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+/* eslint-disable react/prop-types */
+import  { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { addCart, clearCart, loadCart } from "../actions/cartAction";
 import { connect } from "react-redux";
@@ -10,7 +11,7 @@ import { ReactComponent as Loader } from "../assets/svg/Loader (2).svg";
 import { postOrder } from "../actions/orderAction";
 
 const Checkout = ({
-  cart: { cart, loading: cartLoading, error: cartError },
+  cart: { cart, loading: cartLoading },
   loadCart,
   clearCart,
 }) => {
@@ -32,6 +33,7 @@ const Checkout = ({
   //   return <h1>problem in cart</h1>;
   // }
 
+  // eslint-disable-next-line react/prop-types
   const subtotal = cart.reduce((total, item) => {
     return total + item.price * item.quantity;
   }, 0);
@@ -50,7 +52,7 @@ const Checkout = ({
       const { email, username } = localStorageData.user;
       const res = await axiosInstance.get("/cart");
       const dataWithId=res.data
-      const Odata = dataWithId.map(({ id, ...rest }) => rest);
+      const Odata = dataWithId.map(({  ...rest }) => rest);
 
       const formattedData = Odata.map((element) => ({
         image: element.image,

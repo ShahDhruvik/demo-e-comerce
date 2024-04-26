@@ -156,6 +156,36 @@
       "password": "$2a$10$o1g0qQMM7uNCVnu9du55H.uoAbNo6/f3KIiHzOozflbtDKYVGU5Sm",
       "username": "Devep",
       "id": 26
+    },
+    {
+      "email": "nsarvaiya2701@gmail.com",
+      "password": "$2a$10$zcH9hmWh6o.byDknigzzZujRT.fnkzoKWRPRTwFjDWGaXAyuVKZR6",
+      "username": "Nayan sarvaiya",
+      "id": 27
+    },
+    {
+      "email": "nsarvaiya2007@gmail.com",
+      "password": "$2a$10$ik0gSTO9QK24xqxWDMZ7pu.1V/s6RY.9PgG9.Z1D3WrsBexFsqGvO",
+      "username": "Nayan sarvaiya",
+      "id": 28
+    },
+    {
+      "email": "sar2004@gmail.com",
+      "password": "$2a$10$OK2chi8I5TufaSdJp8V.X.Q90SC/aE0izCah9.lUq8acxZmUl0bki",
+      "username": "Nayan sarvaiya",
+      "id": 29
+    },
+    {
+      "email": "n2004@gmail.com",
+      "password": "$2a$10$lxJlUecQ.Pi2TrSFx7BuseGf9IeBaR.LYz2teEtd71A5Ja1Srdt1K",
+      "username": "nikhil",
+      "id": 30
+    },
+    {
+      "email": "nn@gmail.com",
+      "password": "$2a$10$V4tUKcZ4Riay7g1A.9C0TOeMC7N2/OuqmXc5FrwO2agRTNk0fap.O",
+      "username": "Nayan sarvaiya",
+      "id": 31
     }
   ],
   "cart": [],
@@ -596,6 +626,40 @@
       "subtotal": 400,
       "orderDate": "Feb 7, 2024 03:59 PM",
       "id": 84
+    },
+    {
+      "product": [
+        {
+          "image": "https://res.cloudinary.com/dhd9snyq6/image/upload/v1686432657/MensWear8_xbhdxw.jpg",
+          "categoryName": "Nike Shoes",
+          "caption": "Nike Air Jordan Green",
+          "price": "100",
+          "quantity": 1
+        }
+      ],
+      "email": "nsarvaiya2007@gmail.com",
+      "username": "Nayan sarvaiya",
+      "orderID": "#324983",
+      "subtotal": 100,
+      "orderDate": "Mar 28, 2024 03:38 PM",
+      "id": 85
+    },
+    {
+      "product": [
+        {
+          "image": "https://res.cloudinary.com/dhd9snyq6/image/upload/v1686432657/MensWear8_xbhdxw.jpg",
+          "categoryName": "Nike Shoes",
+          "caption": "Nike Air Jordan Green",
+          "price": "100",
+          "quantity": 1
+        }
+      ],
+      "email": "sar2004@gmail.com",
+      "username": "Nayan sarvaiya",
+      "orderID": "#129896",
+      "subtotal": 100,
+      "orderDate": "Apr 1, 2024 10:09 AM",
+      "id": 86
     }
   ],
   "shippingDetails": [
@@ -768,6 +832,26 @@
       "email": "de@gmail.com",
       "username": "DEVANGG",
       "id": 18
+    },
+    {
+      "fullName": "sarvaiya nayan",
+      "address": "rajkot",
+      "city": "rajkot",
+      "state": "india",
+      "zipCode": "364140",
+      "email": "nsarvaiya2007@gmail.com",
+      "username": "Nayan sarvaiya",
+      "id": 19
+    },
+    {
+      "fullName": "sarvaiya nayan",
+      "address": "rajkot",
+      "city": "rajkot",
+      "state": "india",
+      "zipCode": "364140",
+      "email": "sar2004@gmail.com",
+      "username": "Nayan sarvaiya",
+      "id": 20
     }
   ],
   "reviews": [
@@ -833,6 +917,86 @@
       "message": "fsdfds",
       "rating": 2,
       "id": 20
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 21
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 22
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 23
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 24
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 25
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 26
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 27
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 28
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 29
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 30
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 31
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 32
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 33
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 34
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 35
+    },
+    {
+      "message": "",
+      "rating": 0,
+      "id": 36
     }
   ]
 }

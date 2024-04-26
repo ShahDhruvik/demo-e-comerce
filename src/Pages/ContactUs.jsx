@@ -1,15 +1,15 @@
-import React, { useRef } from 'react'
+import  { useRef } from 'react'
 import AboutDesign from "../assets/images/AboutCard.jpg";
 import Footer from './Footer';
 import FindUs from '../components/Find Us';
 import emailjs from '@emailjs/browser';
-import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
 
+// eslint-disable-next-line no-unused-vars
 const validationSchema = Yup.object({
   name: Yup.string().required('Name is required'),
   email: Yup.string().email('Invalid email address').required('Email is required'),

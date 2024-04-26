@@ -1,4 +1,3 @@
-import React from 'react';
 import Us from "../assets/images/Us1.jpg";
 import Us2 from "../assets/images/Us2.jpg";
 import Us3 from "../assets/images/Us3.jpg";

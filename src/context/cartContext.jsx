@@ -4,6 +4,7 @@ import axiosInstance from "../utils/AxiosInstance";
 export const CartContext = createContext();
 
 
+// eslint-disable-next-line react/prop-types
 export const CartProvider = ({ children }) => {
     const [CartState, dispatch] = useReducer(cartReducer, cartInitialValue)
 

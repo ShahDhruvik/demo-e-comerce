@@ -1,4 +1,3 @@
-import React from 'react'
 import AboutDesign from "../assets/images/AboutCard.jpg";
 import AboutDesign2 from "../assets/images/AboutCard2.jpg";
 import AboutDesign21 from "../assets/images/AboutCard21.jpg";

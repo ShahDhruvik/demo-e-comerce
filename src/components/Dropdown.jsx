@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import clsx from "classnames";
 import React from "react";
 
@@ -25,7 +27,7 @@ const Dropdown = ({
         {...props}
       >
         <option value="val">{props.placeholder}</option>
-        {options.map((x, index) => {
+        {options.map((x, _index) => {
           return (
             <option key={x.value} value={x.cou}>
               {x.text}

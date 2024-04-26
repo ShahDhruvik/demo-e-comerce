@@ -1,15 +1,14 @@
-import React, { useContext, useEffect, useState } from "react";
+import  {  useEffect, useState } from "react";
 import { ReactComponent as Bag } from "../assets/svg/Bag.svg";
 import { ReactComponent as Close } from "../assets/svg/Close.svg";
 import { ReactComponent as Hamburger } from "../assets/svg/Hamburger.svg";
-import axios from "axios";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import TextIcon from "../assets/svg/textIcon4.gif";
 import { loadCart } from "../actions/cartAction";
 import { connect } from "react-redux";
 
-const Navbar = ({cart: { cart, loading: cartLoading, error: cartError },loadCart}) => {
+const Navbar = () => {
 
 useEffect(() => {
 loadCart()

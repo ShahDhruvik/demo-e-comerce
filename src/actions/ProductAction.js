@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import axiosInstance from "../utils/AxiosInstance";
 
 export const loadProducts = () => async (dispatch) => {

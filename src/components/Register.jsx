@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import { AuthContext } from "../context/authContext";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import * as Yup from 'yup'
 

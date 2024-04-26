@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 
 import Card from "./Card";
-import axios from "axios";
-import axiosInstance from "../utils/AxiosInstance";
 
 const Category = ({ category }) => {
   const [categoryData, setCategoryData] = useState([]);

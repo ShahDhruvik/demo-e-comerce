@@ -1,4 +1,3 @@
-import React from "react";
 import { ReactComponent as InstagramIcon } from "../assets/svg/insta.svg";
 import { ReactComponent as Paypal } from "../assets/svg/paypal.svg";
 import { ReactComponent as Apay } from "../assets/svg/apple-pay.svg";
@@ -6,7 +5,6 @@ import { ReactComponent as Gpay } from "../assets/svg/google-pay.svg";
 import { ReactComponent as Strapie } from "../assets/svg/stripe.svg";
 import { ReactComponent as Fb } from "../assets/svg/fb .svg";
 import { ReactComponent as Twitter } from "../assets/svg/twitter.svg";
-import GooglePayButton from '@google-pay/button-react';
 
 const Footer = () => {
   return (
@@ -47,7 +45,7 @@ const Footer = () => {
             <li className="text-white">Gift</li>
             <li className="text-white">Beauty</li>
             <li className="text-white">Jewelry</li>
-            <li className="text-white">Women's Clothing</li>
+            <li className="text-white">Womens Clothing</li>
             <li className="text-white">Gadgets</li>
           </ul>
         </div>

@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+/* eslint-disable react/prop-types */
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { connect } from "react-redux";
 import { ReactComponent as Close } from "../assets/svg/Close.svg";
@@ -9,14 +10,14 @@ import {
   loadCart,
   deleteCart,
   updateCart,
-  clearCart,
-} from "../actions/cartAction";
+} 
+from "../actions/cartAction";
 import axios from "axios";
 import { useState } from "react";
 import axiosInstance from "../utils/AxiosInstance";
 
 const CartPage = ({
-  cart: { cart, loading: cartLoading, error: cartError },
+  cart: { cart },
   loadCart,
   deleteCart,
 }) => {
@@ -85,7 +86,7 @@ const CartPage = ({
   const handleCart = async () => {
     try {
       const localStorageData = JSON.parse(localStorage.getItem("token"));
-      const { email, username } = localStorageData.user;
+      const { email } = localStorageData.user;
       const checkAddressData = await axiosInstance.get("shippingDetails");
       const Odata = checkAddressData.data;
 
